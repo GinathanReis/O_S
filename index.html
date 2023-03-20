@@ -1,119 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css/style.css">
-    <title>orden de serviço</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <link rel="stylesheet" href="style.css/style.css">
 </head>
-<div id="div-to-print">
-    <!-- Conteúdo da div que será impressa -->
 <body>
-    
-    
-    
-      
+  <header>
+    <img src="imagens/tecnica-colorido.png" alt="" class="logo">
+  </header>
+<div class="marcas" >
+  <div class="card"><a href="ordendeserviço.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/1024px-Samsung_Logo.svg.png" alt=""></a></div>
+  <div class="card"><img src="https://logospng.org/download/apple/logo-apple-2048.png" alt=""></div>
+  <div class="card"><img src="https://logodownload.org/wp-content/uploads/2014/10/motorola-logo-1-1.png" alt=""></div>
+  <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LG_logo_%282015%29.svg/2560px-LG_logo_%282015%29.svg.png" alt=""></div>
+  <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/ASUS_Logo.svg/2560px-ASUS_Logo.svg.png" alt=""></div>
 
-    <section class="home">
-    <form action="" class="pri" >
-        
-        <fieldset>
-            
-        <section>
-        <div class="fnome">
-            <label for="inome">  <h2>nome</h2> </label>
-            <input type="text" name="inome" id="inome">
-            
-        </div>
-        <div class="fnumero">
-            <label for="inome"> <h2> NUMERO </h2> </label>
-            <input type="tel" name="inumber" id="inumber">
-        </div>
-        <div class="freparo">
-            <label for="ireparo"> <h2> REPARO A SER FEITO </h2> </label>
-            <input type="tel" name="ireparo" id="ireparo">
-        </div>
-        <div class="iobs">
-            <input type="text" name="ireparo" id="iobs"
-            placeholder="observação">
-        </div>
-
-        <div id="fmodel" > 
-            <label for=""> <H2>MODELO DO CELULAR</H2> </label>
-            <select id="opcoes">
-                <option value="A10">A10</option>
-                <option value="A20">A20</option>
-                <option value="A30">A30</option>
-              </select>
-              
-              
-              
-
-        </div>
-
-        <div class="freparo">
-            <label for="ireparo"> <h2> valor </h2> </label>
-            <input type="tel" name="ireparo" id="ireparo">
-        </div>
-
-        
-
-        
-
-        
-        
-    </section>
-    <div class="cell" >
-        
-        <img id="imagem" src="https://cdn.pixabay.com/photo/2018/06/11/23/14/hand-3469618_1280.png">
-    </div>
-        
-
-      <button id="print-button">
-        <img src="imagens/impressora.png" alt="">
-      </button> 
-        
-    </form>
-    
-
-    
-    
-    <script>
-        var select = document.getElementById("opcoes");
-var imagem = document.getElementById("imagem");
-
-select.addEventListener("change", function() {
-  if (select.value == "A10") {
-    imagem.src = "https://trocafone.vtexassets.com/arquivos/ids/240787/galaxy-a10-preto-back.png?v=637919490905000000";
-  } else if (select.value == "A20") {
-    imagem.src = "https://trocafone.vtexassets.com/arquivos/ids/240577/galaxy-a20-azul-back.png?v=637919489504800000";
-  } else if (select.value == "A30") {
-    imagem.src = "https://trocafone.vtexassets.com/arquivos/ids/240568/galaxy-a30-azul-back.png?v=637919489446870000";
-  }
-});
-    </script>
-    
-    <script>
-        const button = document.getElementById('print-button');
-        const divToPrint = document.getElementById('div-to-print');
-      
-        button.addEventListener('click', () => {
-          // Usa a API window.print() para gerar o print da página
-          window.print();
-      
-          // Usa a API html2canvas para capturar o conteúdo da div e gerar uma imagem
-          html2canvas(divToPrint).then(canvas => {
-            // Salva a imagem no computador do usuário
-            const link = document.createElement('a');
-            link.download = 'print.png';
-            link.href = window.URL.createObjectURL(canvas.toBlob());
-            link.click();
-          });
-        });
-      </script>
-
+  
+  
+</div>
 
 </body>
-</div>
 </html>

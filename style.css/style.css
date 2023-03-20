@@ -1,19 +1,89 @@
+
+/*  TELA INICIAL   */
+
+
+
+header{
+   
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.agulha{
+    max-height: 50px;
+    margin: 5px;
+    margin-left: 20px;
+    
+}
+
+.local{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.marcas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.card{
+    height: 100px;
+    width: 200px;
+    
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
+.card:hover{
+    background-color: aqua;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*  ORDEN DE SERVIÇO */
+
 *{
     padding: 0px;
     margin: 0px;
 }
+
 .home{
-    width: 100cw;
-    height: 100vh;
+    width: 100vw;
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #af5858;
+    flex-direction: column;
     color: rgb(0, 0, 0);
+}
+.logo{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-height: 100px;
+    
 }
 
 fieldset{
-    display: flex;
+    
     justify-content: center;
     text-align: center;
     padding: 20px;
@@ -23,7 +93,17 @@ fieldset{
     -moz-box-shadow: -4px 11px 36px -6px rgba(0,0,0,0.41);
     box-shadow: -4px 11px 36px -6px rgba(0,0,0,0.41);
     background-color: #ffffff;
+    display: flex;
 
+
+}
+
+#ordenDeServiço{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(89, 169, 216);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
 
 }
 
