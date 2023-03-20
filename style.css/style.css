@@ -13,9 +13,10 @@ header{
     
 }
 .agulha{
-    max-height: 50px;
+    max-height: 30px;
     margin: 5px;
-    margin-left: 20px;
+    margin-left: 30px;
+
     
 }
 
@@ -25,7 +26,7 @@ header{
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
-    
+    color: rgb(0, 0, 0);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -66,9 +67,10 @@ header{
     margin: 0px;
 }
 
+
+
 .home{
     width: 100vw;
-    
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -78,12 +80,13 @@ header{
 .logo{
     margin-bottom: 50px;
     margin-top: 50px;
-    max-height: 100px;
+    max-height: 60px;
     
 }
 
+
 fieldset{
-    
+    background-color: white;
     justify-content: center;
     text-align: center;
     padding: 20px;
@@ -92,9 +95,9 @@ fieldset{
     -webkit-box-shadow: -4px 11px 36px -6px rgba(0,0,0,0.41);
     -moz-box-shadow: -4px 11px 36px -6px rgba(0,0,0,0.41);
     box-shadow: -4px 11px 36px -6px rgba(0,0,0,0.41);
-    background-color: #ffffff;
+    
     display: flex;
-
+    
 
 }
 
@@ -104,6 +107,8 @@ fieldset{
     padding: 10px;
     border-radius: 10px;
     color: white;
+    position: relative;
+    bottom: -25px;
 
 }
 
@@ -169,9 +174,10 @@ h2{
     position: relative;
     font-size: 15px;
     
+    
 }
 .cellimg{
-    width:300px;
+    width:250px;
 }
 .cell{
     
