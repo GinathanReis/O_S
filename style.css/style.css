@@ -1,7 +1,9 @@
 
 /*  TELA INICIAL   */
 
-
+body{
+    background-color: #F0F1F2;
+}
 
 header{
    
@@ -103,7 +105,7 @@ fieldset{
 
 #ordenDeServiço{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(89, 169, 216);
+    background-color: #056CF2;
     padding: 10px;
     border-radius: 10px;
     color: white;
@@ -138,7 +140,7 @@ input{
     height: 30px;
     border-radius: 10px;
     border: none;
-    background-color: #0000004d;
+    background-color: #E8F0FE;
     cursor: pointer;
     font-size: 20px;
     text-align: center;
@@ -173,7 +175,7 @@ h2{
     text-transform: uppercase;
     position: relative;
     font-size: 15px;
-    
+    color: #056CF2;
     
 }
 .cellimg{
@@ -191,7 +193,7 @@ h2{
 }
 
 .iobs input{
-    background-color: #0000000a;
+    background-color: #E8F0FE;
     font-size: 15px;
     text-align: start;
     

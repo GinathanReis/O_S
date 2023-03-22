@@ -62,4 +62,3 @@ const button = document.getElementById('print-button');
           });
         });
 
-
